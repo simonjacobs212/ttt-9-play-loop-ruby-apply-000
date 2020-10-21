@@ -34,5 +34,18 @@ def turn(board)
     turn(board)
   end
 end
-
 # Define your play method below
+
+def play(board)
+  turn_count = 0
+  current_player = "X"
+  while turn_count < 9
+    turn(board)
+    turn_count += 1
+    end
+  if current_player == "X"
+    current_player = "O"
+  else
+    current_player = "X"
+  end
+end
